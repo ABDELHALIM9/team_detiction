@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paradise</title>
+    <link id="main-style" rel="stylesheet" href="styles/master1.css">
+    <link rel="stylesheet" href="styles/sign-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script>
+
+        function displayLabel(E) {
+            E.previousElementSibling.style.visibility = "visible";
+            E.placeholder = "";
+        }
+
+        function hideLabel(E) {
+            E.previousElementSibling.style.visibility = "hidden";
+            E.placeholder = E.dataset.cpl;
+            E.style.border = "none"
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- scroll up link button  (common between the two themes) -->
+    <div class="scroll-up">
+        <a href="#" title="Scroll up"><i class="material-icons">expand_less</i></a>
+    </div>
+
+    <!-- theme converter button  (common between the two themes)-->
+    <div class="theme">
+        <button class="themeb" onclick="theme()"><i class="material-icons" id="theme-icon">wb_sunny</i></button>
+    </div>
+
+    <main>
+        <a href="index.html" class="LOGO"  id="lo">paradise</a>
+
+        <div class="sign-in">
+            <form action="" method="post">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <td>
+                                <h2>create your Paradise account</h2>
+                            </td>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="first">
+                            <td class="box">
+                                <label for="first" class="focus">first name</label>
+                                <input type="text" id="first" name="fisrt name" placeholder="First name"
+                                    onfocus="displayLabel(this)" onblur="hideLabel(this)"
+                                    data-cpl="First name" required>
+                            </td>
+                        </tr>
+
+                        <tr class="last">
+                            <td class="box">
+                                <label for="last">last name</label>
+                                <input type="text" id="last" name="last name" placeholder="Last name"
+                                    onfocus="displayLabel(this)" onblur="hideLabel(this)" data-cpl="Last name" required>
+                            </td>
+                        </tr>
+
+                        <tr class="email">
+                            <td class="box">
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email" placeholder="Email address"
+                                    onfocus="displayLabel(this)" onblur="hideLabel(this)" data-cpl="Email address" required>
+                            </td>
+                        </tr>
+
+                        <tr class="pass">
+                            <td class="box">
+                                <label for="pass">create a password</label>
+                                <input type="password" id="pass" name="password" placeholder="Create a Password"
+                                    onfocus="displayLabel(this)" onblur="hideLabel(this)" data-cpl="Create a Password" required maxlength="20" minlength="8">
+                            </td>
+                        </tr>
+
+                        <tr class="c-pass">
+                            <td class="box">
+                                <label for="c-pass">confirm the password</label>
+                                <input type="password" id="c-pass" name="c-Password" placeholder="Confirm the password"
+                                    onfocus="displayLabel(this)" onblur="hideLabel(this)"
+                                    data-cpl="Confirm the password" required maxlength="20" minlength="8">
+                            </td>
+                        </tr>
+
+                        <tr class="keep">
+                            <td>
+                                <input type="checkbox" id="keep" name="keep-me-sign" checked>
+                                <label for="keep">keep me signed in</label><br>
+                                <span>uncheck if using a public device.</span>
+                            </td>
+                        </tr>
+
+                        <tr class="send-me">
+                            <td>
+                                <input type="checkbox" id="send-me" name="send-me" checked>
+                                <label for="send-me"><span>send me emails about new arrivals, hot items, daily <br>
+                                    savings, & more.</span> </label>
+                            </td>
+                        </tr>
+
+                        <tr class="terms">
+                            <td>
+                                <span>by clicking Create Account, you acknowledge you have <br> read and agreed to our
+                                    Terms
+                                    of Use and Privacy Policy.</span>
+                            </td>
+                        </tr>
+
+                        <tr class="submit">
+                            <td>
+                                <input type="submit" value="Create account" onclick="Validate()">
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr class="already">
+                            <td>
+                                <span>already have an account?</span>
+                            </td>
+                        </tr>
+
+                        <tr class="log-in">
+                            <td>
+                                <a href="log-in.html" class="log-in-link">log in</a>
+                            </td>
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-us" id="contact-us">
+            <h2>contact us</h3>
+                <div class="icons">
+                    <a href="mailto:salahcst344@gmail.com" target="_blank" class="mail" title="Gmail"><i
+                            class="material-icons">mail</i></a>
+                    <a href="https://www.facebook.com/salah.mohmed.3386/" target="_blank" class="fac"
+                        title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/salah-mohamed-1649b0234" target="_blank" class="lin"
+                        title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+        </div>
+
+        <div class="feedback" id="feedback">
+            <form action="" method="post">
+                <label for="feed">
+                    <h2>give us your feedback</h2>
+                </label>
+                <textarea name="Feedback" id="feed" cols="34" rows="5"
+                    placeholder="Please, give us your feedback freely."></textarea><br>
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </footer>
+    
+    <footer class="copyright">
+        &copy; Paradise team.
+    </footer>
+
+    <script src="JS/sign&log.js"></script>
+
+</body>
+
+</html>

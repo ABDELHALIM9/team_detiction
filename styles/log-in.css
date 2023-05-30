@@ -1,0 +1,29 @@
+.sign-up-link {
+    display: block;
+    background: #fff;
+    color: #000;
+    border: none;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.7);
+    padding: 10px 5px;
+    width: 80%;
+    font-size: 18px;
+    margin: 5px 9.5%;
+    border-radius: 20px;
+}
+
+.sign-up-link:hover {
+    box-shadow: 0 0 0 0.8px #6d6e71;
+    color: #6d6e71;
+}
+
+.submit td input[type="submit"] {
+    margin-left: 11%;
+}
+
+.keep td span {
+    padding-left: 18px;
+}
+
+main {
+    height: 457px;
+}

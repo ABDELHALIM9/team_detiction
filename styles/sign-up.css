@@ -1,0 +1,149 @@
+main {
+  height: 797px;
+}
+
+td a {
+  color: #262626;
+}
+
+.LOGO {
+  color: #0075ff;
+  padding: 5px;
+  margin: 5px;
+  display: block;
+  width: fit-content;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+}
+
+.LOGO:hover {
+  color: #0075ff;
+}
+
+.sign-in table h2 {
+  font-size: 20px;
+}
+
+table {
+  margin: 10px auto;
+}
+
+td {
+  padding: 8px;
+  margin: 15px;
+}
+
+td dl {
+  font-size: 14px;
+}
+
+td dl dt {
+  font-weight: 700;
+}
+
+span {
+  color: #262626;
+}
+
+td h2 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding-left: 10px;
+  border-radius: 6px;
+  border: none;
+  height: 56px;
+  -webkit-box-shadow: inset 0 0 0 1px #9d9fa2;
+  box-shadow: inset 0 0 0 1px #9d9fa2;
+  width: 100%;
+}
+
+td {
+  position: relative;
+}
+
+.box label {
+  font-size: 14px;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  background-color: #fff;
+  color: #6d6e71;
+  padding: 0 5px;
+  visibility: hidden;
+  transition: 0s;
+  border-radius: 20px;
+}
+
+.box input:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+.send-me label,
+.keep label,
+.keep span,
+.terms span,
+.already {
+  font-size: 14px;
+  color: #6d6e71;
+}
+
+.keep label {
+  font-weight: 700;
+  color: #000;
+}
+
+.send-me,
+.keep,
+.terms {
+  line-height: 20px;
+}
+
+td input[type="submit"] {
+  border: none;
+  border-radius: 20px;
+  background-color: #0075ff;
+  color: #fff;
+  padding: 10px;
+  width: 80%;
+  font-size: 18px;
+  margin: 5px 10%;
+}
+
+td input[type="submit"]:hover {
+  background-color: #004f9a;
+}
+
+tfoot {
+  text-align: center;
+}
+
+.log-in-link {
+  display: block;
+  background: #fff;
+  color: #000;
+  border: none;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.7);
+  padding: 10px 5px;
+  width: 80%;
+  font-size: 18px;
+  margin: 5px 8.3%;
+  border-radius: 20px;
+}
+
+.log-in-link:hover {
+  box-shadow: 0 0 0 0.8px #6d6e71;
+  color: #6d6e71;
+}
+
+footer {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
